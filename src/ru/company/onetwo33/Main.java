@@ -31,7 +31,7 @@ public class Main {
         printGreeting("Алексей");
 
         // Задание 8
-        System.out.println(isLeapYear(2020));
+        isLeapYear(2020);
     }
 
     public static float exp(float a, float b, float c, float d) {
@@ -54,11 +54,14 @@ public class Main {
         System.out.println("Привет, " + name + "!");
     }
 
-    public static boolean isLeapYear(int year) {
+    public static void isLeapYear(int year) {
         if (year % 400 == 0) {
-            return true;
+            System.out.println("Високосный");
         } else if (year % 100 == 0) {
-            return false;
-        } else return year % 4 == 0;
+            System.out.println("Не високосный");
+        } else if (year % 4 == 0) {
+            System.out.println("Високосный");
+        } else
+            System.out.println("Не високосный");
     }
 }
