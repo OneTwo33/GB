@@ -1,10 +1,9 @@
 package ru.company.onetwo33;
 
-import java.util.Random;
-
 public abstract class Animal {
-
-    private static int COUNT_ANIMALS = 0;
+//    капсом именуются только static final поля, то есть константы. В данном случае надо просто countAnimals
+//    private static int COUNT_ANIMALS = 0;
+    private static int countAnimals = 0;
 
     private String name;
     private int age;
@@ -14,25 +13,26 @@ public abstract class Animal {
         this.name = name;
         this.age = age;
         this.color = color;
-        COUNT_ANIMALS++;
+        countAnimals++;
     }
 
-    public void run(double value) {}
+//    так как методы всегда переопределяются в дочерних классах, делаем их абстрактными
+//    public void run(double value) {}
+//
+//    public void swim(double value) {}
+//
+//    public void jump(double value) {}
 
-    public void swim(double value) {}
+    public abstract void run(double value);
 
-    public void jump(double value) {}
+    public abstract void swim(double value);
+
+    public abstract void jump(double value);
 
     public void printCount() {}
 
     public static void printAllCount() {
-        System.out.println(COUNT_ANIMALS);
-    }
-
-    public static double getRandParameter (double from, double to) {
-        Random r = new Random();
-        double randomValue = from + (to - from) * r.nextDouble();
-        return randomValue;
+        System.out.println(countAnimals);
     }
 
 }

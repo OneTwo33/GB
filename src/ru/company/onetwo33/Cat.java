@@ -2,20 +2,20 @@ package ru.company.onetwo33;
 
 public class Cat extends Animal {
 
-    private static int COUNT_CATS = 0;
+    private static int countCats = 0;
     double maxJump;
     double maxRun;
 
-    public Cat(String name, int age, String color) {
+    public Cat(String name, int age, String color, double maxJump, double maxRun) {
         super(name, age, color);
-        maxJump = Animal.getRandParameter(0, 3);
-        maxRun = Animal.getRandParameter(100, 300);
-        COUNT_CATS++;
+        this.maxJump = maxJump;
+        this.maxRun = maxRun;
+        countCats++;
     }
 
     @Override
     public void printCount() {
-        System.out.println(COUNT_CATS);
+        System.out.println(countCats);
     }
 
     @Override

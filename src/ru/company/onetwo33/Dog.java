@@ -2,17 +2,17 @@ package ru.company.onetwo33;
 
 public class Dog extends Animal {
 
-    private static int COUNT_DOGS = 0;
+    private static int countDogs = 0;
     double maxJump;
     double maxRun;
     double maxSwim;
 
-    public Dog(String name, int age, String color) {
+    public Dog(String name, int age, String color, double maxJump, double maxRun, double maxSwim) {
         super(name, age, color);
-        maxJump = Animal.getRandParameter(0, 3.5);
-        maxRun = Animal.getRandParameter(250, 600);
-        maxSwim = Animal.getRandParameter(0, 15);
-        COUNT_DOGS++;
+        this.maxJump = maxJump;
+        this.maxRun = maxRun;
+        this.maxSwim = maxSwim;
+        countDogs++;
     }
 
     @Override
@@ -41,6 +41,6 @@ public class Dog extends Animal {
 
     @Override
     public void printCount() {
-        System.out.println(COUNT_DOGS);
+        System.out.println(countDogs);
     }
 }
