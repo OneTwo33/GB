@@ -1,4 +1,4 @@
-package ru.company.onetwo33;
+package ru.company.onetwo33.javalvl1;
 
 public abstract class Animal {
 //    капсом именуются только static final поля, то есть константы. В данном случае надо просто countAnimals
