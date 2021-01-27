@@ -1,6 +1,6 @@
 package ru.company.onetwo33;
 
-public class Main {
+public class Homework1 {
     public static void main(String[] args) {
         // Задание 2
         byte b = 100;
@@ -19,7 +19,7 @@ public class Main {
         System.out.println(exp(3, 2, 4, 7));
 
         // Задание 4
-        System.out.println(isRangeTenToTwenty(9));
+        System.out.println(isSumInRange10To20(9, 1));
 
         // Задание 5
         printPositiveOrNegative(-1);
@@ -38,8 +38,9 @@ public class Main {
         return a * (b + (c/d));
     }
 
-    public static boolean isRangeTenToTwenty(int num) {
-        return (num >= 10) && (num <= 20);
+    public static boolean isSumInRange10To20(int a, int b) {
+        int sum = a + b;
+        return (sum >= 10) && (sum <= 20);
     }
 
     public static void printPositiveOrNegative(int num) {
