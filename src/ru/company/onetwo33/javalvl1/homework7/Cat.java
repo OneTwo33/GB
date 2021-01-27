@@ -1,6 +1,6 @@
 package ru.company.onetwo33.javalvl1.homework7;
 
-public class Cat {
+class Cat {
     private final String name;
     private int appetite;
     private boolean isFill = false;

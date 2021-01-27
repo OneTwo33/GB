@@ -1,6 +1,6 @@
 package ru.company.onetwo33.javalvl1.homework7;
 
-public class Plate {
+class Plate {
 
     private int food;
 
