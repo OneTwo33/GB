@@ -1,4 +1,4 @@
-package ru.company.onetwo33.homework7;
+package ru.company.onetwo33.javalvl1.homework7;
 
 import java.util.Random;
 

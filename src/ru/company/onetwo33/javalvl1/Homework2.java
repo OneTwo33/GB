@@ -1,4 +1,4 @@
-package ru.company.onetwo33;
+package ru.company.onetwo33.javalvl1;
 
 import java.util.Arrays;
 
